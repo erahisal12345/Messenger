@@ -2,7 +2,9 @@ public class User {
     private String name;
     private String[] sentMessages;
     private String[] receivedMessages;
+    private User[] users = new User[100];
     private int cnt = 0;
+    private int cntUsers = 0;
 
     public User(String name) {
         this.name = name;
@@ -21,11 +23,10 @@ public class User {
     public String[] getSentMessages() { return sentMessages; }
     public String[] getReceivedMessages() { return receivedMessages; }
 
-    public User createUser(String name) {
+    public void createUser(String name) {
         User user = new User(name);
+        users[cntUsers] = user;
+        cntUsers ++;
     }
 
-    public User[] users(User user) {
-
-    }
 }

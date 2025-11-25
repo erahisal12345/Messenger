@@ -11,7 +11,10 @@ public class Message {
         this.time = time;
     }
 
-
+    public User getSender() { return sender; }
+    public User getReceiver() { return receiver; }
+    public String getText() { return text; }
+    public String getTime() { return time; }
 
 
 }
