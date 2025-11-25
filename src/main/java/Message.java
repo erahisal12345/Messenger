@@ -4,6 +4,7 @@ public class Message {
     private String text;
     private String time;
 
+
     public Message(User sender, User receiver, String text, String time) {
         this.sender = sender;
         this.receiver = receiver;
