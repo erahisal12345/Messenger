@@ -12,6 +12,11 @@ public class Message {
         this.time = time;
     }
 
+    public String toString() {
+        return "Отправитель: " + sender.getName() + ". Получатель: " + receiver.getName() + ". Текст " + text + ". Время: " + time;
+
+    }
+
     public User getSender() { return sender; }
     public User getReceiver() { return receiver; }
     public String getText() { return text; }
